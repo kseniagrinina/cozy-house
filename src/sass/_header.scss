@@ -1,0 +1,162 @@
+.header {
+  height: 100vh;
+  background: url(../src/img/bg-dog-largest.png), $gradient;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+
+  @media only screen and (max-width: $bp-largest) {
+    background: url(../src/img/bg-dog-large.png), $gradient;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    background: url(../src/img/bg-dog-medium.png), $gradient;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    background: url(../src/img/bg-dog-small.png), $gradient;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    background: url(../src/img/bg-dog-smallest.png), $gradient;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+
+  &__nav {
+    height: 8rem;
+    position: fixed;
+    width: 100%;
+    z-index: 25;
+    background: linear-gradient(
+      to right,
+      rgba(83, 69, 61, 0.7),
+      rgba(66, 56, 50, 0.7),
+      rgba(53, 46, 42, 0.7),
+      rgba(46, 40, 37, 0.7),
+      rgba(36, 32, 32, 0.7)
+    );
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    position: relative;
+  }
+
+  &__menu {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+
+    @media only screen and (max-width: $bp-small) {
+      position: fixed;
+      background: linear-gradient(
+        to right bottom,
+        rgba(88, 74, 65, 0.98),
+        rgba(47, 40, 37, 0.98),
+        rgba(44, 38, 36, 0.98),
+        rgba(41, 36, 35, 0.98),
+        rgba(27, 27, 29, 0.98)
+      );
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      z-index: 15;
+      right: -100%;
+      transition: all 0.5s ease-out;
+      -webkit-transition: all 0.5s ease-out;
+      -moz-transition: all 0.5s ease-out;
+      -ms-transition: all 0.5s ease-out;
+      -o-transition: all 0.5s ease-out;
+      pointer-events: none;
+      justify-content: center;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: $color-grey-1;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.5rem;
+      padding-bottom: 0.5rem;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12rem;
+        line-height: 10rem;
+      }
+
+      &:hover {
+        color: #fff;
+        border-bottom: 2px solid $color-primary;
+      }
+    }
+  }
+
+  &__menu.open {
+    right: 0;
+    pointer-events: all;
+  }
+
+  &__burger-menu {
+    display: none;
+
+    @media only screen and (max-width: $bp-small) {
+      display: block;
+      position: fixed;
+      cursor: pointer;
+      right: 5%;
+      top: 3%;
+      transform: translate (-3%, -5%);
+      -webkit-transform: translate (-3%, -5%);
+      -moz-transform: translate (-3%, -5%);
+      -ms-transform: translate (-3%, -5%);
+      -o-transform: translate (-3%, -5%);
+      z-index: 20;
+    }
+  }
+
+  &__text-box {
+    width: 35%;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-45%);
+    -webkit-transform: translateY(-45%);
+    -moz-transform: translateY(-45%);
+    -ms-transform: translateY(-45%);
+    -o-transform: translateY(-45%);
+
+    @media only screen and (max-width: $bp-largest) {
+      width: 30%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 50%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 80%;
+      padding: 0 3rem;
+      top: 35%;
+      transform: translateY(-35%);
+      -webkit-transform: translateY(-35%);
+      -moz-transform: translateY(-35%);
+      -ms-transform: translateY(-35%);
+      -o-transform: translateY(-35%);
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 100%;
+      text-align: center;
+      padding: 0 4rem;
+    }
+  }
+}

@@ -1,0 +1,266 @@
+.container {
+  width: 65%;
+  margin: auto;
+  position: relative;
+  height: 100%;
+
+  @media only screen and (max-width: $bp-largest) {
+    width: 75%;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    width: 80%;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 90%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    width: 100%;
+  }
+}
+
+.row {
+  display: flex;
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+}
+
+.btn {
+  padding: 1.5rem 4rem;
+  border-radius: 2.6rem;
+  -webkit-border-radius: 2.6rem;
+  -moz-border-radius: 2.6rem;
+  -ms-border-radius: 2.6rem;
+  -o-border-radius: 2.6rem;
+  color: #292929;
+  font-size: 1.7rem;
+  font-family: Georgia;
+  border: none;
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+
+  &--filled {
+    background-color: $color-primary;
+    color: $color-grey-5;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #fad5bb;
+      transform: translateY(-1px);
+      -webkit-transform: translateY(-1px);
+      -moz-transform: translateY(-1px);
+      -ms-transform: translateY(-1px);
+      -o-transform: translateY(-1px);
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+  }
+
+  &--outline {
+    background-color: transparent;
+    color: $color-grey-5;
+    border: 1px solid $color-primary;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $color-primary;
+      transform: translateY(-1px);
+      -webkit-transform: translateY(-1px);
+      -moz-transform: translateY(-1px);
+      -ms-transform: translateY(-1px);
+      -o-transform: translateY(-1px);
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+
+  @media only screen and (max-width: $bp-small) {
+    left: 3rem;
+  }
+
+  &--main {
+    color: $color-primary;
+    font-size: 3.2rem;
+    letter-spacing: 1.13px;
+    text-transform: capitalize;
+    margin-bottom: 0.8rem;
+  }
+
+  &--sub {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    color: #fff;
+    letter-spacing: 1.2px;
+  }
+}
+
+.heading-primary {
+  &__btn {
+    font-weight: 400;
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+
+  &--main {
+    display: block;
+    width: 80%;
+    color: #fff;
+    font-size: 4.4rem;
+    font-weight: 400;
+    letter-spacing: 2.64px;
+    line-height: 5.7rem;
+    margin-bottom: 4.6rem;
+    animation: moveInLeft 1s ease-out;
+
+    @media only screen and (max-width: $bp-largest) {
+      width: 100%;
+    }
+  }
+
+  &--sub {
+    display: block;
+    color: $color-grey-1;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    margin-bottom: 4.4rem;
+    animation: moveInRight 1s ease-out;
+  }
+}
+
+.section {
+  padding: 10rem 0;
+
+  @media only screen and (max-width: $bp-largest) {
+    padding: 8rem 0;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 7rem 0;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 7rem 2rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin: 5rem 2rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    margin: 0;
+  }
+
+  &-title {
+    color: $color-grey-3;
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 4.5rem;
+    letter-spacing: 0.2rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      font-size: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 2.5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      line-height: 3rem;
+    }
+  }
+}
+
+.col {
+  width: 50%;
+
+  @media only screen and (max-width: $bp-small) {
+    width: 100%;
+  }
+}
+
+.card-info {
+  &__description {
+    color: $color-grey-3;
+    font-size: 1.5rem;
+    letter-spacing: 0.9px;
+    margin-top: 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      text-align: center;
+    }
+  }
+
+  &__number {
+    background-color: $color-primary;
+    border-radius: 0.9rem;
+    -webkit-border-radius: 0.9rem;
+    -moz-border-radius: 0.9rem;
+    -ms-border-radius: 0.9rem;
+    -o-border-radius: 0.9rem;
+    width: fit-content;
+    padding: 1rem 1.5rem;
+    font-size: 1.8rem;
+    font-family: "Times New Roman";
+    letter-spacing: 0.12rem;
+    display: flex;
+    align-items: center;
+    margin-top: 1.3rem;
+
+    @media only screen and (max-width: $bp-small) {
+      margin: 2rem auto;
+    }
+  }
+
+  &__icon {
+    margin-right: 1.5rem;
+    width: 4rem;
+    height: 3rem;
+  }
+
+  &__legal {
+    color: $color-grey-2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    width: 55%;
+    margin-top: 2rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      width: 75%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      text-align: justify;
+      margin: 0 auto;
+    }
+  }
+}
+
+.line {
+  width: 3rem;
+  height: 0.3rem;
+  background-color: $color-primary;
+  margin-bottom: 0.5rem;
+}

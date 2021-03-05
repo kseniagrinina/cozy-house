@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Cozy House | Shelter for pets in Boston</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav sticky">
+        <div class="container">
+          <div class="logo">
+            <a href="#" class="logo__link">
+              <p class="logo--main">Cozy house</p>
+              <p class="logo--sub">Shelter for pets in Boston</p>
+            </a>
+          </div>
+          <div class="header__burger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="#about-section" class="header__menu-link"
+                >About the shelter</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a href="#pets-section" class="header__menu-link">Our pets</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#help-section" class="header__menu-link"
+                >To help the shelter</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a href="#footer" class="header__menu-link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="header__text-box">
+          <h1 class="heading-primary">
+            <span class="heading-primary--main"
+              >Not only people need a home</span
+            >
+            <span class="heading-primary--sub">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+              gravida est in porttitor porttitor. Duis sodales elementum ipsum,
+              vehicula condimentum erat fringilla et.
+            </span>
+            <a
+              href="#about-section"
+              class="heading-primary__btn btn btn--filled"
+            >
+              Make a friend
+            </a>
+          </h1>
+        </div>
+      </div>
+    </header>
+
+    <section class="section about-section" id="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="col about-section__col--left">
+            <img
+              src="src/img/pets.png"
+              class="about-section__img"
+              alt="cat and dog"
+            />
+          </div>
+          <div class="col about-section__col--right">
+            <h2 class="section-title about-section__title">
+              About the shelter “Cozy House”
+            </h2>
+            <p class="about-section__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              efficitur blandit condimentum. Proin accumsan lorem vel gravida
+              fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.
+            </p>
+            <br />
+
+            <p class="about-section__text">
+              Donec consectetur, diam in porta tempus, urna ligula vestibulum
+              nibh, ac ornare felis justo nec leo. Praesent mattis nibh quis
+              ultrices pharetra. Morbi tempus at ante sit amet tristique.
+              Maecenas dignissim justo orci, in laoreet urna dapibus nec.
+              Praesent quis tortor faucibus, tristique ante vitae, dignissim
+              lorem. Sed at ligula et sem mattis gravida ac vel erat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pets-section" id="pets-section">
+      <div class="container">
+        <h2 class="section-title pets-section__title">
+          Our friends who are looking for a home
+        </h2>
+
+        <div class="image-slider swiper-container">
+          <div class="image-slider__wrapper swiper-wrapper">
+            <div class="image-slider__card swiper-slide">
+              <img src="src/img/Katrine.png" alt="Katrine cat image" />
+              <h3 class="image-slider__title">Katrine</h3>
+              <button class="btn image-slider__btn btn--outline">
+                Learn More
+              </button>
+            </div>
+            <div class="image-slider__card swiper-slide">
+              <img src="src/img/Jennifer.png" alt="Jennifer puppy image" />
+              <h3 class="image-slider__title">Jennifer</h3>
+              <button class="btn image-slider__btn btn--outline">
+                Learn More
+              </button>
+            </div>
+            <div class="image-slider__card swiper-slide">
+              <img src="src/img/Woody.png" alt="Woody dog image" />
+              <h3 class="image-slider__title">Woody</h3>
+              <button class="btn image-slider__btn btn--outline">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <button class="btn pets-section__btn btn--filled">
+          Get to know the rest
+        </button>
+      </div>
+    </section>
+
+    <section class="section help-section" id="help-section">
+      <div class="container">
+        <h2 class="section-title help-section__title">
+          Then you can help our shelter
+        </h2>
+        <div class="help-section__main">
+          <div class="help-section__item">
+            <svg class="icon help-section__icon">
+              <use xlink:href="sprite.svg#pet-food"></use>
+            </svg>
+            <span class="help-section__name">Pet food</span>
+          </div>
+
+          <div class="help-section__item">
+            <svg class="icon help-section__icon">
+              <use xlink:href="sprite.svg#transportation"></use>
+            </svg>
+            <span class="help-section__name">Transportation</span>
+          </div>
+
+          <div class="help-section__item">
+            <svg class="icon help-section__icon">
+              <use xlink:href="sprite.svg#toy"></use>
+            </svg>
+            <span class="help-section__name">Toys</span>
+          </div>
+
+          <div class="help-section__item">
+            <svg class="icon help-section__icon">
+              <use xlink:href="sprite.svg#bowl"></use>
+            </svg>
+            <span class="help-section__name">Bowls and cups</span>
+          </div>
+
+          <div class="help-section__item">
+            <svg class="icon help-section__icon">
+              <use xlink:href="sprite.svg#shampoo"></use>
+            </svg>
+            <span class="help-section__name">Shampoos</span>
+          </div>
+
+          <div class="help-section__item">
+            <svg class="icon help-section__icon">
+              <use xlink:href="sprite.svg#vitamins"></use>
+            </svg>
+            <span class="help-section__name">Vitamins</span>
+          </div>
+
+          <div class="help-section__item">
+            <svg class="icon help-section__icon">
+              <use xlink:href="sprite.svg#medicine"></use>
+            </svg>
+            <span class="help-section__name">Medicines</span>
+          </div>
+
+          <div class="help-section__item">
+            <svg class="icon help-section__icon">
+              <use xlink:href="sprite.svg#collar"></use>
+            </svg>
+            <span class="help-section__name">Collars / leashes</span>
+          </div>
+
+          <div class="help-section__item">
+            <svg class="icon help-section__icon">
+              <use xlink:href="sprite.svg#sleeping"></use>
+            </svg>
+            <span class="help-section__name">Sleeping area</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section donation-section">
+      <div class="container">
+        <div class="row">
+          <div class="col donation-section__col--left">
+            <img
+              src="src/img/puppy.png"
+              class="donation-section__img"
+              alt="puppy"
+            />
+          </div>
+          <div class="col donation-section__col--right">
+            <h2 class="section-title donation-section__title">
+              In addition, you can make a donation
+            </h2>
+
+            <div class="card-info">
+              <p class="card-info__description">
+                Name of the bank / Type of bank account
+              </p>
+              <p class="card-info__number">
+                <svg class="icon card-info__icon">
+                  <use xlink:href="sprite.svg#credit-card"></use>
+                </svg>
+                <span>8380 2880 8028 8791 7435</span>
+              </p>
+              <p class="card-info__legal">
+                Legal information and lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Maecenas a ipsum at libero sagittis dignissim
+                sed ac diam. Praesent ultrices maximus tortor et vulputate.
+                Interdum et malesuada fames ac ante ipsum primis in faucibus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="container footer-container">
+        <div class="row">
+          <div class="col footer__col footer__col--left">
+            <h2 class="section-title footer__title">
+              For questions and suggestions
+            </h2>
+            <div class="footer__contact-item">
+              <div class="footer__icon-box">
+                <svg class="icon footer__icon">
+                  <use xlink:href="sprite.svg#envelope"></use>
+                </svg>
+              </div>
+
+              <a href="mailto:email@shelter.com" class="footer__link"
+                >email@shelter.com</a
+              >
+            </div>
+            <div class="footer__contact-item">
+              <div class="footer__icon-box">
+                <svg class="icon footer__icon">
+                  <use xlink:href="sprite.svg#telephone"></use>
+                </svg>
+              </div>
+
+              <a href="tel:+136745677554" class="footer__link"
+                >+13 674 567 75 54</a
+              >
+            </div>
+          </div>
+
+          <div class="col footer__col footer__col--right">
+            <h2 class="section-title footer__title">
+              We are waiting for your visit
+            </h2>
+            <div class="footer__contact-item">
+              <div class="footer__icon-box">
+                <svg class="icon footer__icon">
+                  <use xlink:href="sprite.svg#pin"></use>
+                </svg>
+              </div>
+
+              Boston, Central Street, 1st (Entrance from the store)
+            </div>
+            <div class="footer__contact-item">
+              <div class="footer__icon-box">
+                <svg class="icon footer__icon">
+                  <use xlink:href="sprite.svg#pin"></use>
+                </svg>
+              </div>
+
+              London, South Park, 18st
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
