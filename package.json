@@ -2,6 +2,7 @@
   "name": "p2h-test",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
