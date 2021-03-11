@@ -442,11 +442,11 @@ id) /*: string*/
 }
 
 },{}],"3GZMZ":[function(require,module,exports) {
-var _swiper = require("swiper");
+var _node_modulesSwiper = require("../../node_modules/swiper");
 var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
-var _swiperDefault = _parcelHelpers.interopDefault(_swiper);
+var _node_modulesSwiperDefault = _parcelHelpers.interopDefault(_node_modulesSwiper);
 require("swiper/swiper-bundle.css");
-_swiperDefault.default.use([_swiper.Navigation]);
+_node_modulesSwiperDefault.default.use([_node_modulesSwiper.Navigation]);
 document.addEventListener("DOMContentLoaded", function () {
   const burger = document.querySelector(".header__burger-menu");
   const menu = document.querySelector(".header__menu");
@@ -456,7 +456,7 @@ document.addEventListener("DOMContentLoaded", function () {
   menu.addEventListener("click", () => {
     menu.classList.toggle("open");
   });
-  const swiper = new _swiperDefault.default(".swiper-container", {
+  const swiper = new _node_modulesSwiperDefault.default(".swiper-container", {
     loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
@@ -477,10 +477,51 @@ document.addEventListener("DOMContentLoaded", function () {
   if (module.hot) {
     module.hot.accept();
   }
-  ;
 });
 
-},{"swiper":"GxxLH","swiper/swiper-bundle.css":"4ildJ","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"GxxLH":[function(require,module,exports) {
+},{"swiper/swiper-bundle.css":"4ildJ","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/swiper":"GxxLH"}],"4ildJ":[function() {},{}],"5gA8y":[function(require,module,exports) {
+"use strict";
+
+exports.interopDefault = function (a) {
+  return a && a.__esModule ? a : {
+    default: a
+  };
+};
+
+exports.defineInteropFlag = function (a) {
+  Object.defineProperty(a, '__esModule', {
+    value: true
+  });
+};
+
+exports.exportAll = function (source, dest) {
+  Object.keys(source).forEach(function (key) {
+    if (key === 'default' || key === '__esModule') {
+      return;
+    } // Skip duplicate re-exports when they have the same value.
+
+
+    if (key in dest && dest[key] === source[key]) {
+      return;
+    }
+
+    Object.defineProperty(dest, key, {
+      enumerable: true,
+      get: function () {
+        return source[key];
+      }
+    });
+  });
+  return dest;
+};
+
+exports.export = function (dest, destName, get) {
+  Object.defineProperty(dest, destName, {
+    enumerable: true,
+    get: get
+  });
+};
+},{}],"GxxLH":[function(require,module,exports) {
 /**
  * Swiper 6.4.15
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -11697,48 +11738,6 @@ var _default = {
   }
 };
 exports.default = _default;
-},{"../../utils/utils":"3xqzY","../../utils/dom":"36a0X"}],"4ildJ":[function() {},{}],"5gA8y":[function(require,module,exports) {
-"use strict";
-
-exports.interopDefault = function (a) {
-  return a && a.__esModule ? a : {
-    default: a
-  };
-};
-
-exports.defineInteropFlag = function (a) {
-  Object.defineProperty(a, '__esModule', {
-    value: true
-  });
-};
-
-exports.exportAll = function (source, dest) {
-  Object.keys(source).forEach(function (key) {
-    if (key === 'default' || key === '__esModule') {
-      return;
-    } // Skip duplicate re-exports when they have the same value.
-
-
-    if (key in dest && dest[key] === source[key]) {
-      return;
-    }
-
-    Object.defineProperty(dest, key, {
-      enumerable: true,
-      get: function () {
-        return source[key];
-      }
-    });
-  });
-  return dest;
-};
-
-exports.export = function (dest, destName, get) {
-  Object.defineProperty(dest, destName, {
-    enumerable: true,
-    get: get
-  });
-};
-},{}]},["1vSbZ","3GZMZ"], "3GZMZ", "parcelRequire7e03")
+},{"../../utils/utils":"3xqzY","../../utils/dom":"36a0X"}]},["1vSbZ","3GZMZ"], "3GZMZ", "parcelRequire7e03")
 
 //# sourceMappingURL=index.355c732e.js.map
