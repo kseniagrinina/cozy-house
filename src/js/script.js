@@ -1,7 +1,7 @@
 // import Swiper from "swiper/bundle";
-import Swiper, { Navigation } from "../../node_modules/swiper";
+import Swiper, { Navigation } from "swiper";
 Swiper.use([Navigation]);
-import "../../node_modules/swiper/swiper-bundle.css";
+import "swiper/swiper-bundle.css";
 
 document.addEventListener("DOMContentLoaded", function () {
   const burger = document.querySelector(".header__burger-menu");
