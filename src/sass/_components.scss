@@ -1,3 +1,7 @@
+img {
+  max-width: 100%;
+}
+
 .container {
   width: 65%;
   margin: auto;
@@ -30,12 +34,8 @@
 }
 
 .btn {
+  @include rounded-corner(2.6rem);
   padding: 1.5rem 4rem;
-  border-radius: 2.6rem;
-  -webkit-border-radius: 2.6rem;
-  -moz-border-radius: 2.6rem;
-  -ms-border-radius: 2.6rem;
-  -o-border-radius: 2.6rem;
   color: #292929;
   font-size: 1.7rem;
   font-family: Georgia;
@@ -210,11 +210,7 @@
 
   &__number {
     background-color: $color-primary;
-    border-radius: 0.9rem;
-    -webkit-border-radius: 0.9rem;
-    -moz-border-radius: 0.9rem;
-    -ms-border-radius: 0.9rem;
-    -o-border-radius: 0.9rem;
+    @include rounded-corner(0.9rem);
     width: fit-content;
     padding: 1rem 1.5rem;
     font-size: 1.8rem;

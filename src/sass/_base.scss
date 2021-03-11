@@ -9,6 +9,19 @@ $color-light-grey-2: #fafafa;
 
 $gradient: linear-gradient(to right bottom, #584a41, #2f2825, #1b1b1d, #1b1b1d);
 
+@mixin rounded-corner($arc) {
+  border-radius: $arc;
+  -webkit-border-radius: $arc;
+  -moz-border-radius: $arc;
+  -ms-border-radius: $arc;
+  -o-border-radius: $arc;
+}
+
+%bg-image {
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
 $bp-largest: 106.2em; // 1700 (where normal styles apply)
 $bp-large: 80em; // 1280px
 $bp-medium: 61.8em; // 991px
@@ -75,11 +88,9 @@ html {
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(10rem);
   }
   100% {
     opacity: 1;
-    transform: translate(0);
   }
 }
 

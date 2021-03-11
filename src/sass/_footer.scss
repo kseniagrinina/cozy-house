@@ -90,6 +90,10 @@
     }
   }
 
+  &__address {
+    font-style: normal;
+  }
+
   &__link:link,
   &__link:visited {
     color: $color-primary;

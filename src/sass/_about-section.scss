@@ -1,10 +1,9 @@
 .about-section {
   &__img {
-    max-width: 100%;
-    padding-right: 4rem;
+    margin-right: 4rem;
 
     @media only screen and (max-width: $bp-small) {
-      padding-right: unset;
+      margin-right: unset;
       width: 30%;
       margin-bottom: 2rem;
     }
@@ -33,6 +32,7 @@
     font-size: 1.5rem;
     color: $color-grey-4;
     line-height: 2.4rem;
+    margin-bottom: 2rem;
 
     @media only screen and (max-width: $bp-largest) {
       width: 85%;

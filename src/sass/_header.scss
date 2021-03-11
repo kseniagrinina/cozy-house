@@ -1,31 +1,23 @@
 .header {
-  height: 100vh;
-  background: url(../src/img/bg-dog-largest.png), $gradient;
-  background-position: bottom right;
-  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  background-image: url(../src/img/bg-dog-largest.png), $gradient;
+  @extend %bg-image;
 
   @media only screen and (max-width: $bp-largest) {
-    background: url(../src/img/bg-dog-large.png), $gradient;
-    background-position: bottom right;
-    background-repeat: no-repeat;
+    background-image: url(../src/img/bg-dog-large.png), $gradient;
   }
 
   @media only screen and (max-width: $bp-large) {
-    background: url(../src/img/bg-dog-medium.png), $gradient;
-    background-position: bottom right;
-    background-repeat: no-repeat;
+    background-image: url(../src/img/bg-dog-medium.png), $gradient;
   }
 
   @media only screen and (max-width: $bp-medium) {
-    background: url(../src/img/bg-dog-small.png), $gradient;
-    background-position: bottom right;
-    background-repeat: no-repeat;
+    background-image: url(../src/img/bg-dog-small.png), $gradient;
   }
 
   @media only screen and (max-width: $bp-small) {
-    background: url(../src/img/bg-dog-smallest.png), $gradient;
-    background-position: bottom right;
-    background-repeat: no-repeat;
+    background-image: url(../src/img/bg-dog-smallest.png), $gradient;
   }
 
   &__nav {
@@ -125,14 +117,8 @@
   }
 
   &__text-box {
+    align-items: center;
     width: 35%;
-    position: absolute;
-    top: 45%;
-    transform: translateY(-45%);
-    -webkit-transform: translateY(-45%);
-    -moz-transform: translateY(-45%);
-    -ms-transform: translateY(-45%);
-    -o-transform: translateY(-45%);
 
     @media only screen and (max-width: $bp-largest) {
       width: 30%;
@@ -146,11 +132,6 @@
       width: 80%;
       padding: 0 3rem;
       top: 35%;
-      transform: translateY(-35%);
-      -webkit-transform: translateY(-35%);
-      -moz-transform: translateY(-35%);
-      -ms-transform: translateY(-35%);
-      -o-transform: translateY(-35%);
     }
 
     @media only screen and (max-width: $bp-smallest) {

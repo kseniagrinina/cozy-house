@@ -1,3 +1,8 @@
+.header {
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
 *,
 *::after,
 *::before {
@@ -67,11 +72,9 @@ html {
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(10rem);
   }
   100% {
     opacity: 1;
-    transform: translate(0);
   }
 }
 
@@ -90,6 +93,10 @@ body {
 a:link,
 a:visited {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 .container {
@@ -134,12 +141,12 @@ a:visited {
 }
 
 .btn {
-  padding: 1.5rem 4rem;
   border-radius: 2.6rem;
   -webkit-border-radius: 2.6rem;
   -moz-border-radius: 2.6rem;
   -ms-border-radius: 2.6rem;
   -o-border-radius: 2.6rem;
+  padding: 1.5rem 4rem;
   color: #292929;
   font-size: 1.7rem;
   font-family: Georgia;
@@ -398,41 +405,32 @@ a:visited {
 }
 
 .header {
-  height: 100vh;
-  background: url(../src/img/bg-dog-largest.png), linear-gradient(to right bottom, #584a41, #2f2825, #1b1b1d, #1b1b1d);
-  background-position: bottom right;
-  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  background-image: url(../src/img/bg-dog-largest.png), linear-gradient(to right bottom, #584a41, #2f2825, #1b1b1d, #1b1b1d);
 }
 
 @media only screen and (max-width: 106.2em) {
   .header {
-    background: url(../src/img/bg-dog-large.png), linear-gradient(to right bottom, #584a41, #2f2825, #1b1b1d, #1b1b1d);
-    background-position: bottom right;
-    background-repeat: no-repeat;
+    background-image: url(../src/img/bg-dog-large.png), linear-gradient(to right bottom, #584a41, #2f2825, #1b1b1d, #1b1b1d);
   }
 }
 
 @media only screen and (max-width: 80em) {
   .header {
-    background: url(../src/img/bg-dog-medium.png), linear-gradient(to right bottom, #584a41, #2f2825, #1b1b1d, #1b1b1d);
-    background-position: bottom right;
-    background-repeat: no-repeat;
+    background-image: url(../src/img/bg-dog-medium.png), linear-gradient(to right bottom, #584a41, #2f2825, #1b1b1d, #1b1b1d);
   }
 }
 
 @media only screen and (max-width: 61.8em) {
   .header {
-    background: url(../src/img/bg-dog-small.png), linear-gradient(to right bottom, #584a41, #2f2825, #1b1b1d, #1b1b1d);
-    background-position: bottom right;
-    background-repeat: no-repeat;
+    background-image: url(../src/img/bg-dog-small.png), linear-gradient(to right bottom, #584a41, #2f2825, #1b1b1d, #1b1b1d);
   }
 }
 
 @media only screen and (max-width: 47.8em) {
   .header {
-    background: url(../src/img/bg-dog-smallest.png), linear-gradient(to right bottom, #584a41, #2f2825, #1b1b1d, #1b1b1d);
-    background-position: bottom right;
-    background-repeat: no-repeat;
+    background-image: url(../src/img/bg-dog-smallest.png), linear-gradient(to right bottom, #584a41, #2f2825, #1b1b1d, #1b1b1d);
   }
 }
 
@@ -527,14 +525,8 @@ a:visited {
 }
 
 .header__text-box {
+  align-items: center;
   width: 35%;
-  position: absolute;
-  top: 45%;
-  transform: translateY(-45%);
-  -webkit-transform: translateY(-45%);
-  -moz-transform: translateY(-45%);
-  -ms-transform: translateY(-45%);
-  -o-transform: translateY(-45%);
 }
 
 @media only screen and (max-width: 106.2em) {
@@ -554,11 +546,6 @@ a:visited {
     width: 80%;
     padding: 0 3rem;
     top: 35%;
-    transform: translateY(-35%);
-    -webkit-transform: translateY(-35%);
-    -moz-transform: translateY(-35%);
-    -ms-transform: translateY(-35%);
-    -o-transform: translateY(-35%);
   }
 }
 
@@ -571,13 +558,12 @@ a:visited {
 }
 
 .about-section__img {
-  max-width: 100%;
-  padding-right: 4rem;
+  margin-right: 4rem;
 }
 
 @media only screen and (max-width: 47.8em) {
   .about-section__img {
-    padding-right: unset;
+    margin-right: unset;
     width: 30%;
     margin-bottom: 2rem;
   }
@@ -612,6 +598,7 @@ a:visited {
   font-size: 1.5rem;
   color: #4c4c4c;
   line-height: 2.4rem;
+  margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 106.2em) {
@@ -824,7 +811,11 @@ a:visited {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 9px;
+  border-radius: 0.9rem;
+  -webkit-border-radius: 0.9rem;
+  -moz-border-radius: 0.9rem;
+  -ms-border-radius: 0.9rem;
+  -o-border-radius: 0.9rem;
 }
 
 .image-slider__card:hover {
@@ -995,6 +986,10 @@ a:visited {
   .footer__contact-item {
     font-size: 1.5rem;
   }
+}
+
+.footer__address {
+  font-style: normal;
 }
 
 .footer__link:link, .footer__link:visited {
